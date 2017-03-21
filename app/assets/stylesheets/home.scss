@@ -1,0 +1,30 @@
+.intro_pic {
+    height: 675px;
+    width: 450px;
+}
+
+li #mycarousel {
+	width: 100%;
+}
+.banner {
+	width: 100%;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 1;
+}
+
+.intro-fleur {
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	text-align: justify;
+	line-height: 24px;
+}
+
+.page-content {
+	padding-top: 70px;
+}
