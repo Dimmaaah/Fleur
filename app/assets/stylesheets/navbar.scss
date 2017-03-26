@@ -1,9 +1,6 @@
 #navbar {
-	background-color: transparent;
-	height: 80px;
+	height: 30px;
 	font-size: 24px;
-	margin-top: 0px;
-	margin-bottom: 40px;
 }
 
 #navbar ul li {
@@ -11,6 +8,7 @@
 	display: inline-block;
 	margin-left: 15px;
 	margin-top: 20px;
+
 }
 
 
@@ -18,8 +16,29 @@
 
 ul.case {
 	list-style-type: none;
+		color: red;
 }
 ul.case li {
 	display: inline-block;
 	padding: 25px;
+}
+.navbar {
+	background: transparent;
+
+}
+.li-div {
+	max-width: 140px;
+	max-height: 90px;
+}
+.tet {
+	width: 100%
+}
+
+.caseitem {
+	position: fixed;
+	color: red;
+}
+a {
+    color: #ed3019;
+    text-decoration: none;
 }

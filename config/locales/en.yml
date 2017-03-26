@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  
+  intro:
+    p1: "this is your mother speaking"

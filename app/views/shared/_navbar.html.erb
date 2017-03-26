@@ -1,11 +1,52 @@
 <nav>
-	<div id="navbar">
+	<div id="navbar" class="navbar">
 			<div class="container">
 			<ul class="pull-right">
 				<li><%= link_to "Home", root_path%></li>
 				<li><%= link_to "About", about_path%></li>
-				<li><%= link_to "Work", work_path%></li>
 				<li><%= link_to "Contact", root_path%></li>
+				<li class="nav-item dropdown">
+           			 <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cases</a>
+           			 <div class="dropdown-menu" aria-labelledby="dropdown01">
+		            	<ul>
+			            	<li>
+			            	<%= link_to work_path do %>
+			            	<div class="li-div">
+			            		<%= image_tag("fleur-11.jpg", class: "tet") do %>
+			            		<p class="caseitem"><h4>Shoot Amsterdam</h4></p>
+			            		<% end %>
+			            	</div>
+			            	<% end %>
+			            	</li>
+			            		<li>
+			            	<%= link_to work_path do %>
+			            		<p class="caseitem"><h4>Queens Party</h4></p>
+			            	<div class="li-div">
+			            		<%= image_tag("fleur-18.jpg", class: "tet") %>
+			            	</div>
+			            	<% end %>
+			            	</li>
+			            		<li>
+			            	<%= link_to work_path do %>
+			            		<p class="caseitem"><h4>Celebs</h4></p>
+			            	<div class="li-div">
+			            		<%= image_tag("fleur-20.jpg", class: "tet") %>
+			            	</div>
+			            	<% end %>
+			            	</li>
+			         <!--    	<li><%= link_to "Shoot Amsterdam", root_path%></li>
+			            	<hr>
+			            	<li><%= link_to "Queens Party", root_path%></li>
+			            	<hr>
+			            	<li><%= link_to "Celebs", root_path%></li> -->
+						</ul>
+            		</div>
+          		</li>
+          	</ul>
+
+<!-- 				<li class="pull-right"><%= link_to_unless_current image_tag("uk.png"), locale: "en" %></li>
+      <li class="pull-right"><%= link_to_unless_current image_tag("nl.png"), locale: "nl" %></li>  
+    </ul> -->
 				
 		</div>
 	</div>
