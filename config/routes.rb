@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :mailsenders
 	scope ":locale" do
 	  root 'home#index'
 	  get 'home/index'
