@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   devise_for :mailsenders
+
+  resources "contacts", only: [:new, :create]
 	scope ":locale" do
 	  root 'home#index'
 	  get 'home/index'
