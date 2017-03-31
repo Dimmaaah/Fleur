@@ -55,34 +55,67 @@
   <div>your content</div>
 </div>
  -->
-<div class="container-fluid banner">
+<section id="bgcolor" style="background-color: black;">
+	<div class="container banner">
 
-     <div id="mycarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#mycarousel" data-slide-to="1"></li>
-            <li data-target="#mycarousel" data-slide-to="2"></li>
-            <li data-target="#mycarousel" data-slide-to="3"></li>
-            <li data-target="#mycarousel" data-slide-to="4"></li>
-          </ol>
+	     <div id="mycarousel" class="carousel slide" data-ride="carousel">
+	          <!-- Indicators -->
+	          <ol class="carousel-indicators">
+	            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+	            <li data-target="#mycarousel" data-slide-to="1"></li>
+	            <li data-target="#mycarousel" data-slide-to="2"></li>
+	            <li data-target="#mycarousel" data-slide-to="3"></li>
+	            <li data-target="#mycarousel" data-slide-to="4"></li>
+	          </ol>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <%= image_tag("Work-Links-29", :alt => "fleur") %>
-            </div>
-            <div class="item">
-              <%= image_tag("Work-Rechts-1", :alt => "fleur") %>
-            </div>
-            <div class="item">
-              <%= image_tag("Work-Rechts-2", :alt => "fleur") %>
-            </div>
-          </div>
+	          <!-- Wrapper for slides -->
+	          <div class="carousel-inner" role="listbox">
+	            <div class="item active">
+	              <%= image_tag("Work-Links-29", :alt => "fleur") %>
+	            </div>
+	            <div class="item">
+	              <%= image_tag("Work-Rechts-1", :alt => "fleur") %>
+	            </div>
+	            <div class="item">
+	              <%= image_tag("Work-Rechts-2", :alt => "fleur") %>
+	            </div>
+	          </div>
+	</div>
+</section>
+<section id="about">
+	<div class="container page-content">
+
+	<div class="row">
+		<div class="intro-fleur col-md-6 col-sm-6 col-xs-12">
+			<p>
+				Fleur Feringa is a Stylist. She creates and produces original images for magazines and the world of advertising.
+			</p>
+			<p>
+				From her multi-facetted background in different fields of the fashion industry she developed a great eye. Fleur’s broad vision, connected to an eccentric sense of style, lead her to fashion story telling within photography, film and commercials in addition to creating extraordinary shows, breath-taking window displays and curating exhibitions.
+			</p>
+			<p>
+				Fleur has worked for a variety of clients such as: Adidas, Albert Heijn, Algemeen Dagblad, AVRO, Bijenkorf, BNN, Concertgebouw, Halal, ING Bank, KRO, LXRY Magazine, Milkshake Festival, Mysteryland, Nieuwe Revu, NYLON, Playboy, Quest, Quote, Redken, Spinnin’ Records, Talkies, Toni & Guy, Vice, VGZ, VPRO, Wasteland and many more.</p>
+			<p>
+				Furthermore she has created looks for Dutch Celebrity’s like: Christina Curry, Gaite Jansen, Geraldine Kemper, Jan Versteegh, Leco van Zadelhoff, Martin Garrix, Victoria Koblenko and many others.
+			</p>
+			<p>
+				As a clothing consultant Fleur takes care of the wardrobes of private clients.
+			</p>
+
+
+			<p><%= t 'intro.p1' %></p>
+
+			<p><%= link_to "See Work", root_path, class: "pull-right" %></p>
+		</div>
+		<div class="intro-fleur-pic col-md-6 col-sm-6 col-xs-12">
+			<%= image_tag("fleur.jpg", class: "intro_pic") %>
+		</div>
+	</div>
 </div>
+</section>
+<section id="contact">
+	<div class="container">
 
+	</div>
+</section>
 
-<div class="container">
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-</div>
